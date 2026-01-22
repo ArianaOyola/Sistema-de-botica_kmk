@@ -1,0 +1,106 @@
+body {
+    background-color: #2A8B8B;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header-seccion {
+    background-color: #1B365D;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    border-bottom: 3px solid #000;
+}
+
+.titulo-pagina {
+    margin: 0;
+    letter-spacing: 3px;
+    font-size: 28px;
+}
+
+.header-icon {
+    font-size: 45px;
+}
+
+.contenedor-clientes {
+    padding: 20px;
+    padding-bottom: 100px;
+}
+
+.formulario-datos {
+    background-color: #CCCCCC; /* Gris de Balsamiq */
+    border: 2px solid #000;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.grid-formulario {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.campo label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.campo input, .campo select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 12px;
+    background-color: #ADD8E6; /* Azul claro de los campos */
+    box-sizing: border-box;
+}
+
+.busqueda-bar {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.input-buscar {
+    flex: 1;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #000;
+}
+
+.tabla-container {
+    margin-top: 20px;
+    background: white;
+    border: 2px solid #000;
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th { background: #E0E0E0; border: 1px solid #000; padding: 10px; }
+td { border: 1px solid #CCC; padding: 8px; text-align: center; }
+
+.acciones-inferiores {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn-accion, .btn-tabla {
+    background-color: #2A8B8B;
+    color: white;
+    border: 2px solid #000;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-accion:hover { background-color: #1B365D; }

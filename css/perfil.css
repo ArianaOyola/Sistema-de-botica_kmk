@@ -1,0 +1,131 @@
+:root {
+    --azul-oscuro: #1B365D;
+    --verde-fondo: #2A8B8B;
+    --gris-panel: #CCCCCC;
+    --celeste-campo: #ADD8E6;
+    --blanco: #FFFFFF;
+}
+
+body {
+    background-color: var(--verde-fondo);
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* --- CABECERA ESTÁNDAR --- */
+.header-seccion {
+    background-color: var(--azul-oscuro);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 60px;
+    border-bottom: 3px solid #000;
+}
+
+.header-icon { font-size: 60px; }
+
+.titulo-pagina {
+    margin: 0;
+    letter-spacing: 5px;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+/* --- CONTENEDOR PRINCIPAL --- */
+.contenedor-principal {
+    padding: 40px; /* Un poco más de espacio para que se vea centrado */
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Centramos el formulario horizontalmente */
+    align-items: flex-start; /* Alineado arriba */
+}
+
+/* --- FORMULARIO GRIS --- */
+.formulario-datos {
+    background-color: var(--gris-panel);
+    border: 2px solid #000;
+    padding: 30px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 800px; /* Ancho máximo para que no se estire demasiado */
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+}
+
+fieldset {
+    border: 2px solid #000;
+    padding: 20px;
+}
+
+legend {
+    background-color: var(--azul-oscuro);
+    color: white;
+    padding: 5px 15px;
+    font-weight: bold;
+    border: 1px solid #000;
+}
+
+/* --- GRID DE INPUTS (2 Columnas) --- */
+.grid-formulario {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 columnas iguales */
+    gap: 25px;
+}
+
+.grupo-input { display: flex; flex-direction: column; }
+
+.grupo-input label { 
+    font-weight: bold; 
+    margin-bottom: 8px; 
+    font-size: 14px;
+}
+
+.grupo-input input {
+    padding: 12px;
+    border: 1px solid #000;
+    border-radius: 12px;
+    background-color: var(--celeste-campo);
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+/* Inputs de solo lectura (Grisáceos) */
+.input-readonly {
+    background-color: #E0E0E0 !important;
+    color: #555;
+    cursor: not-allowed;
+}
+
+/* Span para que la contraseña ocupe todo el ancho si quieres */
+.span-2 { grid-column: span 2; }
+
+/* --- BOTONES INFERIORES --- */
+.botones-ficha {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.btn-ficha {
+    background-color: var(--verde-fondo);
+    color: white;
+    border: 2px solid #000;
+    padding: 12px 40px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.btn-ficha:hover { background-color: #1B365D; }
+
+.btn-volver { 
+    background-color: var(--azul-oscuro); 
+    text-decoration: none; 
+    display: flex;
+    align-items: center;
+}

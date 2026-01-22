@@ -1,0 +1,8 @@
+# Ignorar credenciales de base de datos
+botica_kmk/conexion.php
+conexion.php
+
+# Ignorar archivos del sistema y de editores
+.DS_Store
+.vscode/
+Thumbs.db
